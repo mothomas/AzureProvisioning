@@ -1,14 +1,14 @@
 
-Design
+# Design
 
 
-Installation Process Flow Diag
+## Installation Process Flow Diag
 
-https://github.com/mothomas/AzureProvisioning/blob/master/doc/images/flowdiag.png
+Upload Image Here
 
-Infrastructure Architecture
+## Infrastructure Architecture
 
-
+Upload Image Here
 
 
 
