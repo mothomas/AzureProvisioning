@@ -1,0 +1,7 @@
+--- 
+- name: build the ui_app image
+  command: docker build . -t uiapp:latest
+  args:
+    chdir: /home/UI_app/TechTestApp
+  tags:          
+   - build-image-on-host
