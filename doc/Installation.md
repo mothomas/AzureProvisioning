@@ -3,8 +3,8 @@
 
 ## Prerequisites
 
-1 Terraform  0.12
-2 Ansible  2
+1. Terraform  0.12
+2. Ansible  2
 
 ## What you need to do
 
