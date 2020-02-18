@@ -13,21 +13,23 @@
 ## What you need to do
 
 
-1 execute ./build-n-deploy.sh from the cloned repo directory
+1 execute ./build-n-deploy.sh from the cloned repo directory. Enter the variables as prompted
 
       above sript will initiate  Teraform infra provisioning work flow then ansible to 
       deploy application
       
- conf.toml file will be generated and copied to application servers by script
- There is a fair chance of ansible script not running on both VMs
- in this case a rerun of only ansible script will be enough
+ conf.toml file will be generated and copied to application servers by script based on input variable
+ (currently port 3000 is hard coded as app port but can be changed to a variable based port.
+ There is a fair chance of ansible script not running on both VMs, This is a random behaviour.
+ in this case a rerun of only ansible script is enough
   use command
    ansible-playbook deploy_ui_app.yaml --list-tags 
    and use tags to re-run play books if required.
  
- ## Installation process can be done step by step also
-  execute following steps from Repo directory I have added multiple option in ,.build-n-deploy.sh
-  but only 1 will work, since it is only required for E to E deployment. Rest of the options are subset of one
+ ### Multiple option in deployment script
+  I have added multiple option in ,.build-n-deploy.sh
+  but only 1 will work, for E to E deployment. Rest of the options are subset of 1. and script can be reused
+  
   
   
       
