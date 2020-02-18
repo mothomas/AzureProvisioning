@@ -3,22 +3,31 @@
 
 ## Prerequisites
 
-1. Terraform  0.12
-2. Ansible  2
+1. Linux VM
+2. Terraform  0.12
+3. Ansible  2
+4. AZ cli
+5. Azure Account
+
 
 ## What you need to do
 
-1 pull app repo 
-  Edit conf.toml for  changing input variables and commit changes
-  
-  copy conf.toml to Provisioning repo directo "*****need to be changed
 
-2 execute ./build-n-deploy.sh from the cloned repo directory
+1 execute ./build-n-deploy.sh from the cloned repo directory
 
-      above sript will initiate  Teraform infra provioning work flow then ansible to 
+      above sript will initiate  Teraform infra provisioning work flow then ansible to 
       deploy application
+      
+ conf.toml file will be generated and copied to application servers by script
+ There is a fair chance of ansible script not running on both VMs
+ in this case a rerun of only ansible script will be enough
+  use command
+   ansible-playbook deploy_ui_app.yaml --list-tags 
+   and use tags to re-run play books if required.
+ 
  ## Installation process can be done step by step also
-  execute following steps from Repo directory
+  execute following steps from Repo directory I have added multiple option in ,.build-n-deploy.sh
+  but only 1 will work, since it is only required for E to E deployment. Rest of the options are subset of one
   
-  1
+  
       
