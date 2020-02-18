@@ -5,9 +5,9 @@
 
 1. Linux VM
 2. Terraform  0.12
-3. Ansible  2
+3. Ansible  2.5
 4. AZ cli
-5. Azure Account
+5. Alid Azure Account
 
 
 ## What you need to do
