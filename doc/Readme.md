@@ -8,7 +8,13 @@
 
 ## Infrastructure Architecture
 
-Upload Image Here
+![arcimage](https://github.com/mothomas/AzureProvisioning/blob/master/doc/images/arch_diag.png)
+
+
+
+chhanges required
+adr-001 document
+
 
 
 
