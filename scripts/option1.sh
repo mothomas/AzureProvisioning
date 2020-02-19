@@ -35,7 +35,7 @@ export serv1
 ./scripts/hosts.sh $serv0 $serv1 $keypath > hosts
 echo -e $keypath
 
-ansible-playbook -i hosts deploy_ui_app.yaml --extra-vars "ansible_password=$password" --skip-tags skip-always
+ansible-playbook -i hosts deploy_ui_app.yaml --extra-vars "ansible_password=$password" --skip-tags=skip-always
 
 link=$(terraform otput fqdn_of_load_balancer)
 export link
