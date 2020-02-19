@@ -1,7 +1,0 @@
----
-#enable docker
-- name: enable docker
-  service:
-    name: docker
-    state: started
-    enabled: yes

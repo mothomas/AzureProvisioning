@@ -1,9 +1,0 @@
----
-- name: Clone app repository
-  git:
-    repo: https://github.com/servian/TechTestApp.git
-    dest: /home/UI_app/TechTestApp
-    archive: /tmp/TechTestApp.zip
-    force: yes
-  tags:
-     - pull-repo
