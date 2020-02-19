@@ -1,0 +1,6 @@
+---
+- name: start ui app
+  command: docker exec -it  uiapp ./TechTestApp serve
+  ignore_errors: yes
+  tags:
+   - start-ui-app

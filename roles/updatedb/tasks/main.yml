@@ -1,0 +1,6 @@
+---
+- name: updating db
+  command: docker exec -it uiapp ./TechTestApp updatedb -s
+  ignore_errors: yes
+  tags:
+   - update-db

@@ -1,0 +1,7 @@
+- name: Copy conf.toml
+  copy:
+    src: /tmp/conf.toml
+    dest: /home/UI_app/TechTestApp/conf.toml
+  tags:
+    - copy_file
+

@@ -1,0 +1,21 @@
+---
+
+- name: stoping running uiapp container 
+  command: docker rm --force uiapp
+  ignore_errors: yes
+  tags:
+   - start-container
+   - skip-always  
+- name: cleaning all dead ones
+  expect:
+    command: docker container prune
+    responses:
+      (?i) continue? [y/N]: y
+  tags:   
+   - start-container 
+- name: starting container
+  command: docker run --name uiapp -itd -p 0.0.0.0:3000:3000 uiapp:latest serve
+  args:
+    chdir: /home/UI_app/TechTestApp
+  tags:          
+   - start-container
