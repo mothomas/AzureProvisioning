@@ -20,11 +20,11 @@
       
  conf.toml file will be generated and copied to application servers by script based on input variable
  (currently port 3000 is hard coded as app port but can be changed to a variable based port.
- There is a fair chance of ansible script not running on both VMs, This is a random behaviour.
- in this case a rerun of only ansible script is enough
+ 
+ if ansible rerun required 
   use command
    ansible-playbook deploy_ui_app.yaml --list-tags 
-   and use tags to re-run play books if required.
+   and use tags to re-run required playbook.
  
  ### Multiple option in deployment script
   I have added multiple option in ,.build-n-deploy.sh
