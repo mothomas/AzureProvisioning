@@ -37,7 +37,7 @@ echo -e $keypath
 
 ansible-playbook -i hosts deploy_ui_app.yaml --extra-vars "ansible_password=$password" --skip-tags=skip-always
 
-link=$(terraform otput fqdn_of_load_balancer)
+link=$(terraform output fqdn_of_load_balancer)
 export link
 echo -e "your server will be avilable at http://$link:3000"
 
