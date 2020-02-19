@@ -1,6 +1,8 @@
 ---
 - name: updating db
-  command: docker exec -it uiapp ./TechTestApp updatedb -s
+  command: docker exec  uiapp ./TechTestApp updatedb -s
   ignore_errors: yes
+  when: inventory_hostname in groups['ui_servers'][0]
   tags:
    - update-db
+

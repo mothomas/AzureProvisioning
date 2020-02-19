@@ -15,7 +15,7 @@
    - start-container 
    - skip-always
 - name: starting container
-  command: docker run --name uiapp -itd -p 0.0.0.0:3000:3000 uiapp:latest serve
+  command: docker run --name uiapp -id -p 0.0.0.0:3000:3000 uiapp:latest serve
   args:
     chdir: /home/UI_app/TechTestApp
   tags:          
