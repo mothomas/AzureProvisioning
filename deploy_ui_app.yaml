@@ -1,0 +1,15 @@
+---
+- hosts: ui_servers
+  become: true
+
+  roles:
+    - dockerinstallation
+    - downloadupdateapprepo
+    - copy_conf.toml
+    - builddockerimage
+    - startcontainer
+    - startuiapp
+    - updatedb  
+    - secure_servers
+         
+     
