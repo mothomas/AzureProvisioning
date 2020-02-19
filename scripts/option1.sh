@@ -34,7 +34,11 @@ serv1=$(terraform output vm1_puplic_ip1)
 export serv1
 ./scripts/hosts.sh $serv0 $serv1 $keypath > hosts
 echo -e $keypath
-ansible-playbook -i hosts deploy_ui_app.yaml --extra-vars "ansible_password=$password" --tags secure_server
 
+ansible-playbook -i hosts deploy_ui_app.yaml --extra-vars "ansible_password=$password" --skip-tags skip-always
+
+link=$(terraform otput fqdn_of_load_balancer)
+export link
+echo -e "your server will be avilable at http://$link:3000"
 
 
