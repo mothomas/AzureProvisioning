@@ -4,7 +4,7 @@
 
 ## Installation Process Flow Diag
 
-Upload Image Here
+![image](https://github.com/mothomas/AzureProvisioning/blob/master/doc/images/flow-diag.PNG)
 
 ## Infrastructure Architecture
 
