@@ -26,5 +26,5 @@ if [ "$input" -eq "$input" 2> /dev/null ]; then
 	       echo -e "\n 2 \n "
        fi	   
 else 
-   ENDING not a number
+   echo "ENDING not a number"
 fi

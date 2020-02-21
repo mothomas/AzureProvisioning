@@ -32,7 +32,7 @@ resource "azurerm_public_ip" "piplb" {
   name                = "${var.prefix}-piplb"
   resource_group_name = azurerm_resource_group.UIserver.name
   location            = azurerm_resource_group.UIserver.location
-  domain_name_label   = "mobthomasservianapp"
+  domain_name_label   = "${var.domainname}"
   allocation_method   = "Dynamic"
 }
 

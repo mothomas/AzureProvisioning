@@ -19,6 +19,13 @@ variable "psqldbname" {
   default = "pstgrestak"
 }
 
+variable "domainname" {
+  description = "Enter  a domain name for application should be unique in region"
+  default = "serviantechapp"
+}
+
+
+
 #variable "aport" {
 #  description = "port, which need to be exposed for the application"
 #  default = "3000"
