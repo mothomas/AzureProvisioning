@@ -6,14 +6,21 @@
 1. Linux VM
 2. Terraform  0.12
 3. Ansible  2.5
-4. AZ cli
-5. Alid Azure Account
+4. AZ cli (azure cli)
+5. valid Azure Account
 
 
 ## What you need to do
+1 Azure login
+  execute 
+     az login 
+  from your terminal, you will be prompted to authenticate to azure cloud
+  (https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest)
 
+2 clone git repo
 
-1 execute ./build-n-deploy.sh from the cloned repo directory. Enter the variables as prompted
+3 change working directory to cloned repo directory
+  execute ./build-n-deploy.sh from the cloned repo directory. Enter the variables as prompted
 
       above sript will initiate  Teraform infra provisioning work flow then ansible to 
       deploy application
